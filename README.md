@@ -10,11 +10,11 @@ It enables both **online appointment booking** and **walk-in queue handling**, e
 Traditional banking queues are inefficient, time-consuming, and lack visibility.
 SmartBank solves this by introducing:
 
-* 📅 **Pre-booked appointments (Online)**
-* 🚶 **Walk-in customer handling**
-* ❄️ **Dynamic slot freezing & reallocation**
-* 🏢 **Branch-level configuration**
-* ⚙️ **Admin-controlled slot management**
+- 📅 **Pre-booked appointments (Online)**
+- 🚶 **Walk-in customer handling**
+- ❄️ **Dynamic slot freezing & reallocation**
+- 🏢 **Branch-level configuration**
+- ⚙️ **Admin-controlled slot management**
 
 ---
 
@@ -22,35 +22,35 @@ SmartBank solves this by introducing:
 
 ### 👤 Customer Side
 
-* Book service appointments online
-* Select branch, date, and time slot
-* Prevent duplicate or conflicting bookings
-* View booking summary and details
+- Book service appointments online
+- Select branch, date, and time slot
+- Prevent duplicate or conflicting bookings
+- View booking summary and details
 
 ---
 
 ### 🏢 Admin / Staff Side
 
-* Create walk-in bookings instantly
-* Configure slots per branch and date
-* Enable/disable specific services
-* Set:
+- Create walk-in bookings instantly
+- Configure slots per branch and date
+- Enable/disable specific services
+- Set:
+  - Online capacity
+  - Walk-in capacity
 
-  * Online capacity
-  * Walk-in capacity
-* Freeze slots and transfer unused capacity to walk-in pool
+- Freeze slots and transfer unused capacity to walk-in pool
 
 ---
 
 ### ⚙️ Smart Slot Engine
 
-* Separate capacity handling:
+- Separate capacity handling:
+  - Online bookings
+  - Walk-in bookings
 
-  * Online bookings
-  * Walk-in bookings
-* Real-time availability calculation
-* Conflict detection
-* Dynamic redistribution of unused slots
+- Real-time availability calculation
+- Conflict detection
+- Dynamic redistribution of unused slots
 
 ---
 
@@ -58,18 +58,18 @@ SmartBank solves this by introducing:
 
 SmartBank uses a dual-capacity model:
 
-| Type    | Source                   | Behavior          |
-| ------- | ------------------------ | ----------------- |
-| Online  | Fixed capacity           | Booked in advance |
-| Walk-in | Base + transferred slots | Dynamic usage     |
+| Type    | Source                                                      | Behavior          |
+| ------- | ----------------------------------------------------------- | ----------------- |
+| Online  | Admin-defined slot allocation                               | Booked in advance |
+| Walk-in | Base + transferred slots (Vacant slots from online booking) | Dynamic usage     |
 
 ### 🔁 Freeze Mechanism
 
 When a slot is frozen:
 
-* Remaining online capacity is transferred to walk-in pool
-* Online booking is disabled for that slot
-* Walk-in capacity increases dynamically
+- Remaining online capacity is transferred to walk-in pool
+- Online booking is disabled for that slot
+- Walk-in capacity increases dynamically
 
 ---
 
@@ -77,12 +77,12 @@ When a slot is frozen:
 
 ### Current Implementation
 
-* ⚛️ **React + TypeScript**
-* ⚡ **Vite** (Build Tool)
-* 🎨 **Tailwind CSS**
-* 🧠 **Context API** (State Management)
-* 🎭 **Framer Motion** (Animations)
-* 🔔 **Sonner** (Notifications)
+- ⚛️ **React + TypeScript**
+- ⚡ **Vite** (Build Tool)
+- 🎨 **Tailwind CSS**
+- 🧠 **Context API** (State Management)
+- 🎭 **Framer Motion** (Animations)
+- 🔔 **Sonner** (Notifications)
 
 ---
 
@@ -92,33 +92,32 @@ As the system scales to an enterprise-grade solution, the architecture can be ex
 
 ### Frontend
 
-* ⚛️ **React** (TypeScript / JavaScript)
-* 🎨 Tailwind CSS (or scalable design systems)
+- ⚛️ **React** (TypeScript / JavaScript)
+- 🎨 Tailwind CSS (or scalable design systems)
 
 ### Backend
 
-* 🟢 **Node.js** with **Express.js**
-* RESTful APIs / Microservices architecture (if required)
+- 🟢 **Node.js** with **Express.js**
+- RESTful APIs / Microservices architecture (if required)
 
 ### Database
 
-* 🐘 **PostgreSQL** (via Supabase or dedicated DB infrastructure)
-* 🔗 **Supabase** (Authentication, Realtime, Storage)
+- 🐘 **PostgreSQL** (via Supabase or dedicated DB infrastructure)
+- 🔗 **Supabase** (Authentication, Realtime, Storage)
 
 ---
 
 ## 📈 Scalability Vision
 
-* Modular architecture for independent feature scaling
-* API-driven design for frontend/backend separation
-* Cloud-native deployment (Vercel + Backend services)
-* Secure authentication & role-based access control
-* Real-time capabilities using Supabase or WebSockets
+- Modular architecture for independent feature scaling
+- API-driven design for frontend/backend separation
+- Cloud-native deployment (Vercel + Backend services)
+- Secure authentication & role-based access control
+- Real-time capabilities using Supabase or WebSockets
 
 ---
 
 > ⚡ This setup ensures the project can evolve from a lightweight application into a fully scalable enterprise system without major rewrites.
-
 
 ## 📁 Project Structure
 
@@ -175,19 +174,19 @@ This project is deployed using **Vercel**.
 
 ### Recommended Settings:
 
-* Framework: **Vite**
-* Build Command: `npm run build`
-* Output Directory: `dist`
+- Framework: **Vite**
+- Build Command: `npm run build`
+- Output Directory: `dist`
 
 ---
 
 ## 📊 Future Enhancements
 
-* 📱 Mobile responsiveness improvements
-* 🔔 SMS / Email notifications
-* 🧾 Token-based queue system
-* 📈 Analytics dashboard for admins
-* 🔐 Authentication & role-based access
+- 📱 Mobile responsiveness improvements
+- 🔔 SMS / Email notifications
+- 🧾 Token-based queue system
+- 📈 Analytics dashboard for admins
+- 🔐 Authentication & role-based access
 
 ---
 
@@ -202,10 +201,10 @@ Feel free to fork the repo, create a feature branch, and submit a pull request.
 
 Developed by
 
-* **Hindhu G**
-* **Lathika L J**
-* **Santhosh T**
-* **Vishwaraj G**
+- **Hindhu G**
+- **Lathika L J**
+- **Santhosh T**
+- **Vishwaraj G**
 
 ---
 
